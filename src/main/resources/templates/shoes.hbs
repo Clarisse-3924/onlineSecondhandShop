@@ -1,10 +1,6 @@
 {{#partial "content"}}
-    <img src='imgs/logo.png'height='200'>
-    <h1 class="band-name band-name-large">ONLINE SELLING <strong>SECONDHAND</strong> MATERIALS</h1>
-    </header>
-
     <section class="container content-section women">
-        <h2 class="section-header">WOMEN SHOES</h2>
+        <h2 class="section-header" >SHOP YOUR FAVORITE SHOES ON AFFORDABLE PRICE</h2>
         <div class="shop-items">
 
             <div class="shop-item">
@@ -129,9 +125,6 @@
             </div>
 
         </div>
-    </section>
-    <section class="container content-section men">
-        <h2 class="section-header">MEN SHOES</h2>
         <div class="shop-items">
             <div class="shop-item">
                 <span class="shop-item-title">Air force 1</span>
@@ -323,13 +316,13 @@ h1 strong{
 }
 
 .main-header {
-  background-image: url("Images/Nike-Adapt-BB.jpeg");
+  background-image: url("/css/Images/Nike-Adapt-BB.jpeg");
   background-color: rgba(0, 0, 0, .6);
-
   background-blend-mode: multiply;
   background-size: cover;
   padding-bottom: 30px;
 }
+
 
 .band-name {
   text-align: center;
@@ -359,6 +352,9 @@ h1 strong{
   color: rgb(126, 78, 78);
   text-align: center;
   font-size: 2.5em;
+  margin-top:60px;
+  background-size:cover;
+
 }
 
 
@@ -392,20 +388,26 @@ h1 strong{
   background-color: #34454e;
 }
 
-
-
-
-.men  {
-  background-color: rgba(54, 29, 29, 0.2);
-  background-size: contain;
-}
 .women{
-  background-color: rgba(219, 217, 91, 0.6);
+  background-color:lightgrey;
+
 }
 .shop-item {
-  margin: 40px;
+  margin: 20px;
 }
+#hike1{display: none;
+  position: absolute;
+  top: 110%;
+  color:  #0074B7;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  opacity: 0.6;
+  margin-left:200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
+  }
 .shop-item-title {
   display: block;
   width: 100%;
@@ -413,11 +415,11 @@ h1 strong{
   font-weight: bold;
   font-size: 1.5em;
   color: #333;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .shop-item-image {
-  height: 250px;
+  height: 150px;
 }
 
 .shop-item-details {
@@ -435,6 +437,7 @@ h1 strong{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color:lightgrey;
 }
 
 .cart-header {
@@ -538,5 +541,8 @@ h1 strong{
   margin: 40px auto 80px auto;
   font-size: 1.35em;
 }
+#content-section{ background-color: lightgrey;
+border-radius:50px;}
+
 </style>
 {{> layout.hbs}}

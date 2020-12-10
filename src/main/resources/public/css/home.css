@@ -46,6 +46,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color:red;
     background-image: url('home.jpeg'),linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
     background-blend-mode: overlay;
     height: 100vh;

@@ -1,18 +1,142 @@
-.navbar{
 
-   padding-top: 0rem;
-    padding-left: 50%;
-    background-color: #0074B7;
-}
-  .navbar .nav-link{
-    color:white;
-    font-weight: bold;
-    font-style: oblique;
-    font-size: 16px;
-
-  }
 
    a:hover{
       background-color:  rgb(77, 107, 107);
+  }
+
+  body {
+      font-family: 'Chilanka', cursive;
+
+      padding: 0px;
+  }
+  .container-fluid {
+      padding: 0px;
+  }
+  nav {
+      width: 100%;
+      text-align: right;
+      position: fixed;
+      align-items: center;
+      z-index: 2;
+      top: 0px;
+      padding: 10px 50px;
+      box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+      background-color: #0074B7;
+  }
+  nav li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 80px;
+  }
+  nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+  }
+  nav a:hover {
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      background-color: white;
+  }
+  @media only screen and (max-width: 800px) {
+      nav {
+          text-align: center;
+      }
+      nav ul {
+          margin-right: 5px;
+      }
+  }
+  #home
+  {background-image: url('home.jpeg'),linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+              background-blend-mode: overlay;
+              background-position: center center;
+                    background-attachment: fixed;
+                    background-repeat: no-repeat;
+                    background-size: cover;}
+  .home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+       height: 100vh;
+       width: 100%;
+      color: white;
+      text-align: center;
+  }
+  #home img {
+      padding: 0;
+  }
+  h1 strong{
+      color: #0074B7;
+    }
+  #home h1 {
+      letter-spacing: 2px;
+  }
+  #home h1, h2, img, #shop-btn {
+      animation: fromLeft;
+      animation-duration: 2s;
+      animation-delay: 1s;
+      opacity: 0;
+      animation-fill-mode: both;
+      animation-direction: alternate;
+  }
+  @keyframes fromLeft {
+      0%{
+          transform: translateX(-100px);
+          opacity: 0;
+      }
+      50%{
+          transform: translateX(30px)
+      }
+      100%{
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+  #shop-btn {
+      width: 150px;
+      height: 45px;
+      justify-content: center;
+      background-color: #0074B7;
+      color: #FFFFFF;
+      align-items: center;
+      cursor: pointer;
+      transition: all 1.5s ease-in-out;
+  }
+  #shop-btn:hover {
+      color: yellow;
+  }
+  .button {
+      display: none;
+      width: 150px;
+      height: 45px;
+      justify-content: center;
+      background-color: #0074B7;
+      color: #FFFFFF;
+      align-items: center;
+      justify-content: space-evenly;
+      cursor: pointer;
+      animation: fromRight;
+      animation-duration: 2s;
+      animation-delay: 1s;
+      opacity: 0;
+      animation-fill-mode: forwards;
+  }
+  @keyframes fromRight {
+      0%{
+          transform: translateX(100px);
+          opacity: 0;
+      }
+      50%{
+          transform: translateX(-30px)
+      }
+      100%{
+          transform: translateX(0);
+          opacity: 1;
+      }
+  }
+  .button:hover {
+      color: yellow;
   }
 

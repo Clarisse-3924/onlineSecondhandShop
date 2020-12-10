@@ -1,23 +1,32 @@
-<div id="home">
 {{#partial "content"}}
-        <div class="home">
-            <div class="container-fluid">
-                <div class="container">
-                    <h1>ONLINE SELLING  <strong>SECONDHAND</strong> MATERIALS</h1>
-                    <h2>This is an online shop, that sells used clothes,Phone and shoes in Rwanda.<br>
-                        Shop with us both clothes,Phone and shoes.</h2>
-                    <button id="shop-btn"><span style="font-size: larger;font-weight: 600;">Shop now</span></button><br><br>
-                    <a href="StoreShoes.html">
-                        <button class="button"><span style="font-size: larger;font-weight: 600;">Shoes</span></button>
-                    </a>
-                    <a href="storeclothes.html">
-                        <button class="button"><span style="font-size: larger;font-weight: 600;">Clothes</span></button>
-                    </a>
-                    <a href="storeclothes.html">
-                        <button class="button"><span style="font-size: larger;font-weight: 600;">Phone</span></button>
-                    </a>
-                </div>
-            </div>
+
+    <form action="/dept/new" method="post" id="colors">
+        <h3>Order your Products!!!</h3>
+        <div class="form-group">
+            <label for="name">Customer Name:</label><br>
+            <input class="form-control" id="name" name="name" type="text"><br>
         </div>
+        <div class="form-group">
+            <label for="location"> Location:</label><br>
+            <textarea class="form-control" id="location" name="location" type="text" rows="3"></textarea><br>
+        </div>
+        <div class="form-group">
+            <label for="number">Phone number:</label><br>
+            <input class="form-control" id="number" name="number" type="number"><br>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">order</button>
+        </div>
+    </form>
 {{/partial}}
+<style>
+    #colors{background-color:grey;
+        justify-content:center;
+        padding:20px;
+        color:white;
+        margin-left:5px;
+        margin-right:200px;
+        font-size:15px;
+        margin-top:60px;}
+</style>
 {{> layout.hbs}}

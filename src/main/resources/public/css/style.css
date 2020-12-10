@@ -139,4 +139,9 @@
   .button:hover {
       color: yellow;
   }
+.footer{
+      background-color: #0074B7;
+      background-size: contain;
+      position: relative;
 
+  }

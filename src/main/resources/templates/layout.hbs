@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Online selling secondhand ptoducts{{/block}}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" >
+    <link href="https://fonts.google.com/specimen/Source+Sans+Pro" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/85434d7cc7.js" crossorigin="anonymous"></script>
+    <script src="/js/jquery-3.5.1.js"></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/about.js"></script>
+    <script src="/js/clothes.js"></script>
+    <script src="/js/StoreShoes.js"></script>
+    <link rel="stylesheet"href="/css/bootstrap.css">
+    <link rel="stylesheet"href="/css/style.css">
+    <link href=/css/home.css" rel="stylesheet">
+    <link rel="stylesheet"href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="navbar " style="padding-bottom: 0px;">
+    <nav >
+        <ul class="nav" style="padding-top: 0px">
+            <li ><a class="nav-link" href="index.html">Home</a></li>
+            <li><a  class="nav-link" href="about-us.html">About us</a></li>
+            <li><a  class="nav-link" href="location.html">Location</a></li>
+            <li><a  class="nav-link" href="contact.html">Contact us</a></li>
+        </ul>
+
+    </nav>
+</div>
+<div class="container">
+
+    <div class="col-md-12">
+        {{#block "content"}}
+        {{/block}}
+    </div>
+</div>
+
+{{#block "footer"}}
+
+    <footer class="footer" style="padding-top: 10px;background-size: cover;font-style: italic;margin-top:0px">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2" style="color: white;">Online Selling Second Hand Product</h2>
+                        <p style="color: white;">This websites will allow users to buy the the second hand products on affordable price
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-5">
+                        <h2 class="ftco-heading-2" style="color: white;">Information</h2>
+                        <ul class="list-unstyled" style="text-decoration: none;color: white;">
+                            <li><a href="aboutus.html" class="py-2 d-block" style="color: white;" >About</a></li>
+                            <li><a href="service.html" class="py-2 d-block" style="color: white;">Service</a></li>
+
+
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2" style="color: white;">Customer Support</h2>
+                        <ul class="list-unstyled" >
+
+
+                            <li><a href="service.html" class="py-2 d-block" style="color: white;"></a></li>
+
+                            <li><a href="contact.html" class="py-2 d-block" style="color: white;">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md" style="color:white">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2" >Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <span class="icon icon-map-marker"></span><span class="text" >Kg10 ,Av20 Kigali Rwanda East Africa</sp<an><br><br>
+                    <span><span class="text" style="color: white;">+2507889923345</span><br><br>
+                    <a href="#"><span class="icon icon-envelope"></span><span class="text" style="color:white">info@secondhandproducts.com</span></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+{{/block }}

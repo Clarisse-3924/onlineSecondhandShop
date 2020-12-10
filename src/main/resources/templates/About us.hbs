@@ -1,0 +1,103 @@
+{{#partial "content"}}
+    <div>
+        <h1><b>About Us</b></h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ24CZzCxtl6QbnOn2RKsU2GFkN49QQGUqeVg&usqp=CAU">
+        </div>
+        <div class="col-md-6">
+            <div class="row" id="do">
+                <div class="col-md-4">
+                    <h2 class="doing">Our Service</h2>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="mission">Our mission</h2>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="goal" id="goal1">Our goal</h2>
+                </div><br><br>
+            </div><br>
+            <div>
+                <div class="content1">
+                    <h3>Best Offerings</h3>
+                    <p>Is it your first time in Rwanda? <br>Are you planning to explore the most
+                        beautiful places in Rwanda? <br>
+                        This is the very best website to guide you! you will be able to book a hotel or any oher
+                        places you ever want to visit easily here.<br> </p>
+                </div>
+                <div class="content2">
+                    <h3>Mission</h3>
+                    <p>Visit Rwanda website tends to make sure that each and every tourists gets the
+                        bes of best touristic sites easily and clearly.
+                        We seek to boosting our productivity as well as serving our best to our customers. </p>
+                </div>
+                <div class="content3">
+                    <h3>Goal</h3>
+                    <p>Satisfying your needs is our main goal. serving you the best is all that we are
+                        looking for honestly.</p>
+                </div>
+            </div>
+        </div>
+    </div><br>
+{{/partial}}
+<style>
+
+h1 {
+    color:black;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 80px;
+    font-weight: 1000px;
+
+}
+img {
+    height: 300px;
+    width: 550px;
+    padding-left: 50px;
+
+}
+#do {
+    padding-left: 10px;
+}
+
+.content2, .content3 {
+    display: none;
+    line-height: 30px;
+    width: 70%;
+    text-align: center;
+}
+.content1 {
+    width: 70%;
+    text-align: center;
+}
+.doing:hover, .mission:hover, .goal:hover {
+  background-color: skyblue;
+  border-radius: 10px;
+  cursor: pointer;
+  border-width: 40px 50px;
+}
+#goal1 {
+    text-align: center;
+}
+.navbar{
+
+    padding-top: 0rem;
+     padding-left: 50%;
+     background-color: #0074B7;
+ }
+.navbar .nav-link{
+     color:white;
+     font-weight: bold;
+     font-style: oblique;
+     font-size: 16px;
+
+   }
+
+    a:hover{
+       background-color:  rgb(77, 107, 107);
+   }
+
+</style>
+{{> layout.hbs}}

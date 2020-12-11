@@ -1,20 +1,40 @@
+package models;
+
 import java.util.Objects;
 
 public class Clothes {
+
     private int price;
     private int id;
     private String name;
     private String description;
+    private String image;
 
 
 
-
-    public Clothes(String name, int price, String description){
+    public Clothes(String name, int price, String description,String image){
         this.name=name;
         this.price=price;
         this.description=description;
+        this.image=image;
+    }
+
+    public Clothes() {
 
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
     public String getDescription (){
         return description;
     }

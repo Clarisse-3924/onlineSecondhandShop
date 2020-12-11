@@ -36,12 +36,6 @@ public class App {
         port(getHerokuAssignedPort());
         staticFileLocation("/public");
 
-<<<<<<< HEAD
-        Spark.get("/",(request, response) -> {
-            Map<String,Object> model=new HashMap<String, Object>();
-            return new ModelAndView(model,"Contactus.hbs");
-        },new HandlebarsTemplateEngine());
-=======
         String connectionString = "jdbc:postgresql://localhost:5432/online_test";
         Sql2o sql2o = new Sql2o(connectionString, "belyse", "belyse");
 
@@ -70,9 +64,9 @@ public class App {
             return new ModelAndView(model, "About us.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/contact", (req, res) -> {
+        get("/contactus", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
-            return new ModelAndView(model, "contact us.hbs");
+            return new ModelAndView(model, "Contactus.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/home", (req, res) -> {
@@ -109,7 +103,6 @@ public class App {
             usersdao.addUsers(newUsers);
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
->>>>>>> 7dfee8a212e2fbb9e50da1f814fabce6331b95da
 
 
 

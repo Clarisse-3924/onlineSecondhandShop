@@ -1,16 +1,15 @@
 package dao;
 
-import models.Clothes;
 import models.Users;
 
 import java.util.List;
 
-public interface usersdao {
+public interface UsersDao {
 
     void addUsers(Users users);
 
     //read
-    List<Users> getAll();
+    List<Users> getAllUsers();
 
     Users findById(int id);
 

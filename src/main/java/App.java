@@ -4,10 +4,12 @@ import java.util.Map;
 
 import com.google.gson.Gson;
 import dao.Sql2oAdmin;
+import dao.Sql2oUsers;
 import dao.sql2oclothes;
 import dao.sql2ophones;
 import models.Admin;
 import models.Clothes;
+import models.Users;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import spark.ModelAndView;
@@ -26,6 +28,7 @@ public class App {
     public static void main(String[] args) {
         sql2oclothes clothesdao;
         sql2ophones phonesdao;
+        Sql2oUsers usersdao;
         Sql2oAdmin admindao;
         Connection conn;
         Gson gson = new Gson();
@@ -39,6 +42,7 @@ public class App {
         clothesdao=new sql2oclothes(sql2o);
         phonesdao=new sql2ophones(sql2o);
         admindao=new Sql2oAdmin(sql2o);
+        usersdao=new Sql2oUsers(sql2o);
 
         conn=sql2o.open();
 
@@ -79,6 +83,29 @@ public class App {
             model.put("admin", alladmin);
             return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
+
+        get("/clothes", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "clothes.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/checkout", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "orderform.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        post("/buy", (req, res) -> { //URL to make new task on POST route
+            Map<String, Object> model = new HashMap<>();
+            String name = req.queryParams("name");
+            String location = req.queryParams("location");
+            String phonenumber = req.queryParams("phonenumber");
+            Users newUsers = new Users(name,location,phonenumber); //ignore the hardcoded categoryId for now
+            usersdao.addUsers(newUsers);
+            return new ModelAndView(model, "success.hbs");
+        }, new HandlebarsTemplateEngine());
+
+
+
     }
 
 }

@@ -9,7 +9,7 @@ public interface clothesdao {
     void addClothes(Clothes clothes);
 
     //read
-    List<Clothes> getAll();
+    List<Clothes> getAllClothes();
 
     Clothes findById(int id);
 

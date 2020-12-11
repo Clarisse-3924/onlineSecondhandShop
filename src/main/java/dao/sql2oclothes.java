@@ -35,10 +35,10 @@ public class sql2oclothes implements clothesdao {
     }
 
     @Override
-    public List<Clothes> getAll() {
+    public List<Clothes> getAllClothes() {
         try (Connection con=sql2o.open()){
-            String sql=("SELECT * FROM clothes");
-            return con.createQuery(sql)
+            String sql="SELECT * FROM clothes";
+            return con.createQuery(sql,true)
                     .executeAndFetch(Clothes.class);
         }
     }

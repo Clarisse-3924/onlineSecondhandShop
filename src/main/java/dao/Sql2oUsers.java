@@ -1,19 +1,16 @@
 package dao;
-
 import models.Users;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import org.sql2o.Sql2oException;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class sql2ousers implements usersdao {
+public class Sql2oUsers implements UsersDao {
 
     private final Sql2o sql2o;
 
-
-    public sql2ousers(Sql2o sql2o) {
+    public Sql2oUsers(Sql2o sql2o) {
         this.sql2o = sql2o;
     }
 
@@ -36,7 +33,7 @@ public class sql2ousers implements usersdao {
     }
 
     @Override
-    public List<Users> getAll() {
+    public List<Users> getAllUsers() {
         try (Connection con=sql2o.open()){
             String sql=("SELECT * FROM users");
             return con.createQuery(sql)
@@ -68,4 +65,5 @@ public class sql2ousers implements usersdao {
 
 
     }
+
 }

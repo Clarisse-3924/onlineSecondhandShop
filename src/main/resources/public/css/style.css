@@ -21,7 +21,6 @@
       top: 0px;
       padding: 10px 50px;
       box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
-      background-color: #0074B7;
   }
   nav li {
       list-style: none;
@@ -48,7 +47,7 @@
       }
   }
   #home
-  {background-image: url('home.jpeg'),linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+  {background-image: url('homebcg.jpeg'),linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
               background-blend-mode: overlay;
               background-position: center center;
                     background-attachment: fixed;
@@ -140,7 +139,7 @@
       color: yellow;
   }
 .footer{
-      background-color: #0074B7;
+       background-color:darkblue;
       background-size: contain;
       position: relative;
 
